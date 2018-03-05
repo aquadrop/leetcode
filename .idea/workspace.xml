@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5bc683-ee0f-4a57-b719-0d7c5829b3ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leetcode138.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leetcode141.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leetcode160.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leetcode23.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leetcode86.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ff5bc683-ee0f-4a57-b719-0d7c5829b3ac" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
