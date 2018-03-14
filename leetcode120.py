@@ -4,24 +4,32 @@ class Solution:
         :type triangle: List[List[int]]
         :rtype: int
         """
+
         dp = []
         for i in range(len(triangle)):
             dp.append([0 for _ in range(len(triangle[i]))])
-        dp[0][0] = triangle[0][0]
-        for i in range(1, len(triangle)):
-            for j in range(len(triangle[0])):
-                up = dp[i - 1][j]
-                corner = dp[i - 1][j - 1] if j > 0 else dp[i - 1][j + 1]
-                if up < corner:
-                    dp[i][j] = up + triangle[i][j]
+
+        for i in range(len(triangle[len(triangle) - 1])):
+            dp[len(triangle) - 1][i] = triangle[len(triangle)-1][i]
+
+        for i in range(len(triangle) - 2, -1, -1):
+            for j in range(len(triangle[i])):
+                down = dp[i + 1][j]
+                right = dp[i+ 1][j+1]
+                if down < right:
+                    dp[i][j] = down + triangle[i][j]
                 else:
-                    dp[i][j] = corner + triangle[i][j]
-        return max(dp[len(triangle) - 1])
+                    dp[i][j] = right + triangle[i][j]
+
+        return dp[0][0]
+
+
 
 if __name__ == '__main__':
     S = Solution()
-    a = S.minimumTotal([[2],
+    print(S.minimumTotal([
+     [2],
     [3,4],
    [6,5,7],
-  [4,1,8,3]])
-    print(a)
+  [4,1,8,3]
+]))
